@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+    perl:
+        build:
+            context: .
+        image: perl-5.24.3:20180205
