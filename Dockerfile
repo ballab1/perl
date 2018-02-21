@@ -10,6 +10,6 @@ COPY build /tmp/
 
 # build content
 RUN set -o verbose \
-    chmod u+rwx /tmp/container/build.sh \
-    && /tmp/container/build.sh 'Perl 5-24-3'
+    chmod u+rwx /tmp/build.sh \
+    && /tmp/build.sh 'Perl 5-24-3'
 RUN rm -rf /tmp/*
