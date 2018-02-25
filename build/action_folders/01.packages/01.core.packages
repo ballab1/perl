@@ -1,2 +1,5 @@
 # core Packages
-apk add --no-cache ca-certificates curl findutils openssl shadow sudo tar wget zip
+
+if [ "${CBF['os_id']}" = 'alpine' ]; then
+    apk add --no-cache ca-certificates curl findutils openssl shadow sudo tar wget zip
+fi
