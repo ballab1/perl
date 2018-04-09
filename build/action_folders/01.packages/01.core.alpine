@@ -1,7 +1,8 @@
 # core Packages
 
-if [ "${CBF['os_id']}" = 'alpine' ]; then
-    declare PKGS='curl findutils sudo tar wget zip'
-    package.checkIfInstalled "$PKGS"
-    apk add --no-cache $PKGS
-fi
+PKGS='curl \
+      findutils \
+      sudo \
+      tar \
+      wget \
+      zip'

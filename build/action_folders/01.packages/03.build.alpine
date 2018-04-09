@@ -1,7 +1,15 @@
 # build Packages
 
-if [ "${CBF['os_id']}" = 'alpine' ]; then
-    declare PKGS='build-base expat expat-dev file g++ gcc gcc-objc git gnutls-utils libc6-compat libtool make'
-    package.checkIfInstalled "$PKGS"
-    apk add --no-cache --virtual .buildDepedencies $PKGS
-fi
+OPTS='--virtual .buildDepedencies'
+PKGS='build-base \
+      expat \
+      expat-dev \
+      file \
+      g++ \
+      gcc \
+      gcc-objc \
+      git \
+      gnutls-utils \
+      libc6-compat \
+      libtool \
+      make'
