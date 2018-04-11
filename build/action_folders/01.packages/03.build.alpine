@@ -1,7 +1,7 @@
 # build Packages
 
-OPTS='--virtual .buildDepedencies'
-PKGS='build-base \
+OPTS="--virtual .buildDepedencies"
+PKGS="build-base \
       expat \
       expat-dev \
       file \
@@ -12,4 +12,4 @@ PKGS='build-base \
       gnutls-utils \
       libc6-compat \
       libtool \
-      make'
+      make"

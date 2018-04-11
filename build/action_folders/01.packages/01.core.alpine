@@ -1,8 +1,8 @@
 # core Packages
 
-PKGS='curl \
+PKGS="curl \
       findutils \
       sudo \
       tar \
       wget \
-      zip'
+      zip"

@@ -1,6 +1,6 @@
 # perl Packages
 
-PKGS='openssl-dev \
+PKGS="openssl-dev \
       perl \
       perl-dev \
-      perl-utils'
+      perl-utils"
