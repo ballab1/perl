@@ -1,8 +1,8 @@
 # core Packages
 
-PKGS="curl \
-      findutils \
-      sudo \
-      tar \
-      wget \
-      zip"
+declare aa PKGS=( curl
+                  findutils
+                  sudo
+                  tar
+                  wget
+                  zip )

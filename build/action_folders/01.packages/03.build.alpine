@@ -1,15 +1,15 @@
 # build Packages
 
-OPTS="--virtual .buildDepedencies"
-PKGS="build-base \
-      expat \
-      expat-dev \
-      file \
-      g++ \
-      gcc \
-      gcc-objc \
-      git \
-      gnutls-utils \
-      libc6-compat \
-      libtool \
-      make"
+declare -a OPTS=( '--virtual' '.buildDependencies' )
+declare -a PKGS=( build-base
+                  expat
+                  expat-dev
+                  file
+                  g++
+                  gcc
+                  gcc-objc
+                  git
+                  gnutls-utils
+                  libc6-compat
+                  libtool
+                  make )
