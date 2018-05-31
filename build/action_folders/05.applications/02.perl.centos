@@ -1,0 +1,18 @@
+#!/usr/bin
+# perl Packages
+
+yum install -y centos-release-scl
+yum-config-manager --enable rhel-server-rhscl-7-rpms
+yum install -y rh-perl524
+scl enable rh-perl524 bash
+yum install -y rh-perl524-perl-CPAN make
+
+$LOG "Set up links so that Perl 5.24 can be executed.${LF}" 'info'
+ln -s /opt/rh/rh-perl524/root/usr/bin/perl /usr/bin/perl
+cp -r /opt/rh/rh-perl524/root/usr/lib64/* /usr/lib64
+
+$LOG "Adding CentOS Perl packages.${LF}" 'info'
+# Do NOT install rh-perl524-mod_perl-devel as it installs Perl 5.16.
+declare PKGS='openssl-devel rh-perl524-perl-utils rh-perl524-perl-App-cpanminus rh-perl524-perl-local-lib rh-perl524-perl-Storable rh-perl524-perl-open'
+package.checkIfInstalled "$PKGS"
+yum install -y $PKGS

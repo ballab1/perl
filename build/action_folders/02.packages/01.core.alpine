@@ -1,6 +1,6 @@
 # core Packages
 
-declare aa PKGS=( curl
+declare -a PKGS=( curl
                   findutils
                   sudo
                   tar

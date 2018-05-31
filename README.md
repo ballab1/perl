@@ -1,3 +1,3 @@
-# perl.5-24-3
+# perl.5-26-2
 
-uses 'base_container' with Alpine:3.6
+uses 'base_container' with Alpine:3.8
