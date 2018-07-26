@@ -5,7 +5,7 @@ services:
         build:
             args:
                 CBF_VERSION: "${CBF_VERSION:-}"
-                CONTAINER_NAME: perl-5.26.2
+                CONTAINER_NAME: perl
                 FROM_BASE: ${DOCKER_REGISTRY:-}base_container:${CONTAINER_TAG:-latest}
             cache_from:
                 - ${DOCKER_REGISTRY:-}alpine:3.8
