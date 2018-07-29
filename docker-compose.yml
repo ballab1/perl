@@ -19,7 +19,7 @@ services:
                 container.git.url: $CONTAINER_GIT_URL
                 container.origin: $CONTAINER_ORIGIN
                 container.original.name: perl
-            container.version: ${CONTAINER_VERSION:-3.0.0}
+                container.version: ${CONTAINER_VERSION:-3.0.0}
         container_name: perl
         environment:
             DEBUG_TRACE: ${DEBUG_TRACE:-0}
