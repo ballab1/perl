@@ -1,0 +1,8 @@
+# core Packages
+
+declare -a PKGS=( curl
+                  findutils
+                  sudo
+                  tar
+                  wget
+                  zip ) 

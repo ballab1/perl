@@ -1,4 +1,4 @@
-ARG FROM_BASE=${DOCKER_REGISTRY:-}${OS:-}base_container:${BASE_TAG:-latest}
+ARG FROM_BASE=${DOCKER_REGISTRY:-}${CONTAINER_OS:-}base_container:${BASE_TAG:-latest}
 FROM $FROM_BASE
 
 # name and version of this docker image
@@ -13,6 +13,8 @@ COPY build Dockerfile /tmp/
 #    (0:default, 1:trace & do not cleanup; 2:continue after errors)
 ENV DEBUG_TRACE=0
 
+ARG PERL_VERSION=5.26.2
+LABEL perl.version=$PERL_VERSION
 
 # build content
 RUN set -o verbose \
