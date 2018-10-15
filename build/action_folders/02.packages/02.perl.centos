@@ -1,5 +1,7 @@
 # perl Packages
 
-declare -a PKGS=( rh-perl526-perl-local-lib
-                  rh-perl526-perl-Storable
-                  rh-perl526-perl-open )
+declare -a PKGS=( rh-perl524-perl-local-lib
+                  rh-perl524-perl-Storable
+                  rh-perl526-perl-Env
+                  rh-perl524-perl-utils
+                  rh-perl524-perl-open )
