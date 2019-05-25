@@ -1,8 +1,7 @@
 # build Packages
 
 declare -a OPTS=( '--virtual' '.buildDependencies' )
-declare -a PKGS=( build-base
-                  expat
+declare -a PKGS=( expat
                   expat-dev
                   file
                   g++

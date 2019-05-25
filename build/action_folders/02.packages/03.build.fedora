@@ -2,8 +2,8 @@
 
 #declare -a OPTS=( '.buildDependencies' ) 
 
-declare -a PKGS=(expat-devel
-                 gcc-objc
-                 git
-                 gnutls-utils
-                 libtool )
+declare -a PKGS=( expat-devel
+                  gcc-objc
+                  git
+                  gnutls-utils
+                  libtool )

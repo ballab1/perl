@@ -1,6 +1,7 @@
 # core Packages
 
-declare -a PKGS=( gcc-c++ 
+declare -a PKGS=( build-base
+                  gcc-c++ 
                   openssl-devel
                   sudo
                   zip ) 
