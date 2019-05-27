@@ -19,8 +19,8 @@ LABEL version.perl=$PERL_VERSION
 # build content
 RUN set -o verbose \
     && chmod u+rwx /tmp/build.sh \
-    && /tmp/build.sh "$CONTAINER_NAME" "$DEBUG_TRACE"
-RUN [ $DEBUG_TRACE != 0 ] || rm -rf /tmp/*
+    && /tmp/build.sh "$CONTAINER_NAME" "$DEBUG_TRACE" \
+    && [ "$DEBUG_TRACE" != 0 ] || rm -rf /tmp/*
 
 ENTRYPOINT [ "docker-entrypoint.sh" ]
 #CMD ["$CONTAINER_NAME"]
