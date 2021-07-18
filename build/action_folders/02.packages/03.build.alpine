@@ -1,14 +1,13 @@
 # build Packages
 
-declare -a OPTS=( '--virtual' '.buildDependencies' )
+declare -a BUILD=( expat-dev
+                   g++
+                   gcc
+                   gcc-objc
+                   git
+                   libtool
+                   make )
 declare -a PKGS=( expat
-                  expat-dev
                   file
-                  g++
-                  gcc
-                  gcc-objc
-                  git
                   gnutls-utils
-                  libc6-compat
-                  libtool
-                  make )
+                  libc6-compat )
