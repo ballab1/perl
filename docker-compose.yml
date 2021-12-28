@@ -1,7 +1,6 @@
 version: '3.3'
 
 # repo: https://github/ballab1/perl.git
-# containerOS: alpine
 
 services:
     perl:
