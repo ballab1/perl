@@ -4,5 +4,4 @@ declare -ar env_lwpssl=(
     'PERL_LWP_SSL_CA_PATH=/etc/ssl/certs'
 )
 
-crf.updateRuntimeEnvironment "${env_lwpssl[@]}" 
- 
+crf::updateRuntimeEnvironment "${env_lwpssl[@]}"
